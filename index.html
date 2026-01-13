@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Overview | Ozark Folk Center Trip</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title">
+        <a href="index.html">Ozark Folk Center</a>
+      </h1>
+      <p class="site-subtitle">August 16-19, 2025</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Overview</a>
+      <a href="flights.html">Flights</a>
+      <a href="logistics.html">Logistics</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Ozark Folk Center</h1>
+      <p class="location">Mountain View, Arkansas</p>
+      <div class="hero-dates">
+        <div class="hero-date">
+          <div class="label">Arrive</div>
+          <div class="value">Sat, Aug 16</div>
+        </div>
+        <div class="hero-date">
+          <div class="label">Depart</div>
+          <div class="value">Tue, Aug 19</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>The Trip</h2>
+      <p>A long weekend at the Ozark Folk Center State Park for their music and crafts festival. The park features live folk music, artisan demonstrations, heritage gardens, and traditional Ozark culture.</p>
+      
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">Travelers</div>
+          <div class="info-value">Luke + Dad</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Optional</div>
+          <div class="info-value">Clifford (if via STL)</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Lodging</div>
+          <div class="info-value">VRBO/Airbnb</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Transport</div>
+          <div class="info-value">Rental Car</div>
+        </div>
+      </div>
+    </section>
+
+    <h2>Choose a Destination Airport</h2>
+    <p>We can fly into one of three airports and drive to Mountain View. Each has different trade-offs.</p>
+
+    <div class="destination-grid">
+      
+      <div class="destination-card" data-destination="stl">
+        <div class="destination-header stl">
+          <h3>St. Louis</h3>
+          <div class="airport-code">STL - Lambert International</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-stat">
+            <span class="stat-label">Drive to Mountain View</span>
+            <span class="stat-value">~4.5 hours</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Distance</span>
+            <span class="stat-value">300 miles</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Flight options</span>
+            <span class="stat-value">Most frequent</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Est. car rental (4 days)</span>
+            <span class="stat-value">~$200-250</span>
+          </div>
+          <div class="destination-note highlight">
+            <strong>Dad's preference:</strong> Clifford lives here. Dad could arrive early to visit, and Clifford could join us for the trip.
+          </div>
+          <button class="pref-btn mt-1" data-pref="destination" data-value="stl">
+            Mark as Preferred
+          </button>
+        </div>
+      </div>
+      
+      <div class="destination-card" data-destination="lit">
+        <div class="destination-header lit">
+          <h3>Little Rock</h3>
+          <div class="airport-code">LIT - Clinton National</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-stat">
+            <span class="stat-label">Drive to Mountain View</span>
+            <span class="stat-value">~2 hours</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Distance</span>
+            <span class="stat-value">100 miles</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Flight options</span>
+            <span class="stat-value">Moderate</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Est. car rental (4 days)</span>
+            <span class="stat-value">~$180-220</span>
+          </div>
+          <div class="destination-note">
+            Shortest drive. Arkansas's main airport.
+          </div>
+          <button class="pref-btn mt-1" data-pref="destination" data-value="lit">
+            Mark as Preferred
+          </button>
+        </div>
+      </div>
+      
+      <div class="destination-card" data-destination="mem">
+        <div class="destination-header mem">
+          <h3>Memphis</h3>
+          <div class="airport-code">MEM - Memphis International</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-stat">
+            <span class="stat-label">Drive to Mountain View</span>
+            <span class="stat-value">~3 hours</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Distance</span>
+            <span class="stat-value">160 miles</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Flight options</span>
+            <span class="stat-value">Good (hub)</span>
+          </div>
+          <div class="destination-stat">
+            <span class="stat-label">Est. car rental (4 days)</span>
+            <span class="stat-value">~$180-220</span>
+          </div>
+          <div class="destination-note">
+            FedEx hub with good connections. Medium drive.
+          </div>
+          <button class="pref-btn mt-1" data-pref="destination" data-value="mem">
+            Mark as Preferred
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <section class="card">
+      <h2>Flight Constraints</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">Luke's Outbound</div>
+          <div class="info-value">Aug 16, after 6pm</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Dad's Outbound</div>
+          <div class="info-value">Flexible (or early if STL)</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Both Return</div>
+          <div class="info-value">Aug 19, afternoon+</div>
+        </div>
+      </div>
+      <p class="mt-2">
+        <a href="flights.html" class="btn btn-primary">View Flight Options</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>About Ozark Folk Center</h2>
+      <p>The Ozark Folk Center State Park is dedicated to preserving and presenting traditional Ozark music, crafts, and culture. Located in Mountain View (the "Folk Music Capital of the World"), visitors can:</p>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <li>Watch 20+ artisans demonstrate traditional crafts</li>
+        <li>Hear live folk music on the Blacksmith Stage throughout the day</li>
+        <li>Attend concerts at the 1,000-seat Ozark Highlands Theater</li>
+        <li>Explore the Heritage Herb Garden</li>
+        <li>Dine at the Skillet Restaurant for Southern cooking</li>
+      </ul>
+      <p><strong>Hours (Aug):</strong> Craft Village: Tue-Sat, 10am-5pm. Live music throughout the day.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Trip planning for Luke & Dad</p>
+    <p class="price-note">Flight prices link to Google Flights for live pricing</p>
+  </footer>
+
+  <script src="js/preferences.js"></script>
+</body>
+</html>

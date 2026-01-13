@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Options | Ozark Folk Center Trip</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title">
+        <a href="index.html">Ozark Folk Center</a>
+      </h1>
+      <p class="site-subtitle">August 16-19, 2025</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Overview</a>
+      <a href="flights.html" class="active">Flights</a>
+      <a href="logistics.html">Logistics</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1>Flight Options</h1>
+    <p>Click any flight link to see live prices on Google Flights. Use the filters to narrow down options, and mark your preferences.</p>
+
+    <div class="filter-bar">
+      <span style="font-weight: 500; margin-right: 0.5rem;">Filter by airport:</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="stl">STL - St. Louis</button>
+      <button class="filter-btn" data-filter="lit">LIT - Little Rock</button>
+      <button class="filter-btn" data-filter="mem">MEM - Memphis</button>
+    </div>
+
+    <div class="filter-bar">
+      <span style="font-weight: 500; margin-right: 0.5rem;">Show:</span>
+      <button class="filter-btn active" data-show="all">All Flights</button>
+      <button class="filter-btn" data-show="preferred">Preferred Only</button>
+    </div>
+
+    <!-- LUKE'S FLIGHTS -->
+    <section class="traveler-section">
+      <div class="traveler-header">
+        <span class="traveler-name">Luke</span>
+        <span class="traveler-origin">Richmond, VA (RIC)</span>
+      </div>
+      
+      <h3>Outbound: Saturday, August 16 (after 6pm)</h3>
+      
+      <div class="flight-grid">
+        
+        <!-- STL Flights -->
+        <div class="flight-card" data-airport="stl" data-traveler="luke" data-direction="outbound">
+          <div class="flight-info">
+            <h4>Richmond → St. Louis</h4>
+            <div class="flight-route">RIC → STL</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Evening departures
+              </span>
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                1 stop typical
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20STL%20on%20August%2016%202025%20after%206pm" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="luke-stl-out">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <!-- LIT Flights -->
+        <div class="flight-card" data-airport="lit" data-traveler="luke" data-direction="outbound">
+          <div class="flight-info">
+            <h4>Richmond → Little Rock</h4>
+            <div class="flight-route">RIC → LIT</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Evening departures
+              </span>
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                1 stop typical
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20LIT%20on%20August%2016%202025%20after%206pm" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="luke-lit-out">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <!-- MEM Flights -->
+        <div class="flight-card" data-airport="mem" data-traveler="luke" data-direction="outbound">
+          <div class="flight-info">
+            <h4>Richmond → Memphis</h4>
+            <div class="flight-route">RIC → MEM</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Evening departures
+              </span>
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                1 stop typical
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20MEM%20on%20August%2016%202025%20after%206pm" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="luke-mem-out">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+      <h3 class="mt-2">Return: Tuesday, August 19 (afternoon or later)</h3>
+      
+      <div class="flight-grid">
+        
+        <div class="flight-card" data-airport="stl" data-traveler="luke" data-direction="return">
+          <div class="flight-info">
+            <h4>St. Louis → Richmond</h4>
+            <div class="flight-route">STL → RIC</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Afternoon+ departures
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20STL%20to%20RIC%20on%20August%2019%202025%20afternoon" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="luke-stl-ret">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <div class="flight-card" data-airport="lit" data-traveler="luke" data-direction="return">
+          <div class="flight-info">
+            <h4>Little Rock → Richmond</h4>
+            <div class="flight-route">LIT → RIC</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Afternoon+ departures
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20LIT%20to%20RIC%20on%20August%2019%202025%20afternoon" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="luke-lit-ret">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <div class="flight-card" data-airport="mem" data-traveler="luke" data-direction="return">
+          <div class="flight-info">
+            <h4>Memphis → Richmond</h4>
+            <div class="flight-route">MEM → RIC</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Afternoon+ departures
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20MEM%20to%20RIC%20on%20August%2019%202025%20afternoon" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="luke-mem-ret">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- DAD'S FLIGHTS -->
+    <section class="traveler-section">
+      <div class="traveler-header">
+        <span class="traveler-name">Dad</span>
+        <span class="traveler-origin">Portland, OR (PDX)</span>
+      </div>
+      
+      <h3>Outbound: Saturday, August 16 (flexible, or earlier for STL)</h3>
+      
+      <div class="flight-grid">
+        
+        <div class="flight-card" data-airport="stl" data-traveler="dad" data-direction="outbound">
+          <div class="flight-info">
+            <h4>Portland → St. Louis</h4>
+            <div class="flight-route">PDX → STL</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Flexible timing
+              </span>
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                1 stop typical
+              </span>
+            </div>
+            <div class="destination-note highlight mt-1" style="padding: 0.5rem; font-size: 0.85rem;">
+              Could arrive Aug 14-15 to visit Clifford first
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20STL%20on%20August%2016%202025" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View Aug 16
+            </a>
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20STL%20on%20August%2014%202025" 
+               target="_blank" 
+               class="btn btn-secondary btn-small">
+              View Aug 14
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="dad-stl-out">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <div class="flight-card" data-airport="lit" data-traveler="dad" data-direction="outbound">
+          <div class="flight-info">
+            <h4>Portland → Little Rock</h4>
+            <div class="flight-route">PDX → LIT</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Any time Aug 16
+              </span>
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                1-2 stops typical
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20LIT%20on%20August%2016%202025" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="dad-lit-out">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <div class="flight-card" data-airport="mem" data-traveler="dad" data-direction="outbound">
+          <div class="flight-info">
+            <h4>Portland → Memphis</h4>
+            <div class="flight-route">PDX → MEM</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Any time Aug 16
+              </span>
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                1 stop typical
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20MEM%20on%20August%2016%202025" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="dad-mem-out">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+      <h3 class="mt-2">Return: Tuesday, August 19 (afternoon or later)</h3>
+      
+      <div class="flight-grid">
+        
+        <div class="flight-card" data-airport="stl" data-traveler="dad" data-direction="return">
+          <div class="flight-info">
+            <h4>St. Louis → Portland</h4>
+            <div class="flight-route">STL → PDX</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Afternoon+ departures
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20STL%20to%20PDX%20on%20August%2019%202025%20afternoon" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="dad-stl-ret">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <div class="flight-card" data-airport="lit" data-traveler="dad" data-direction="return">
+          <div class="flight-info">
+            <h4>Little Rock → Portland</h4>
+            <div class="flight-route">LIT → PDX</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Afternoon+ departures
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20LIT%20to%20PDX%20on%20August%2019%202025%20afternoon" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="dad-lit-ret">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+        <div class="flight-card" data-airport="mem" data-traveler="dad" data-direction="return">
+          <div class="flight-info">
+            <h4>Memphis → Portland</h4>
+            <div class="flight-route">MEM → PDX</div>
+            <div class="flight-details">
+              <span class="flight-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Afternoon+ departures
+              </span>
+            </div>
+          </div>
+          <div class="flight-actions">
+            <a href="https://www.google.com/travel/flights?q=Flights%20from%20MEM%20to%20PDX%20on%20August%2019%202025%20afternoon" 
+               target="_blank" 
+               class="btn btn-primary btn-small">
+              View on Google Flights
+            </a>
+            <button class="pref-btn" data-pref="flight" data-value="dad-mem-ret">
+              Prefer
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Quick Compare Section -->
+    <section class="card mt-2">
+      <h2>Quick Price Compare</h2>
+      <p>Open all searches at once to compare current prices:</p>
+      
+      <div class="info-grid" style="margin-top: 1rem;">
+        <div class="info-item">
+          <div class="info-label">STL Round Trips</div>
+          <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20STL%20departing%20August%2016%202025%20returning%20August%2019%202025" 
+             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Luke: RIC↔STL</a>
+          <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20STL%20departing%20August%2016%202025%20returning%20August%2019%202025" 
+             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Dad: PDX↔STL</a>
+        </div>
+        <div class="info-item">
+          <div class="info-label">LIT Round Trips</div>
+          <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20LIT%20departing%20August%2016%202025%20returning%20August%2019%202025" 
+             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Luke: RIC↔LIT</a>
+          <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20LIT%20departing%20August%2016%202025%20returning%20August%2019%202025" 
+             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Dad: PDX↔LIT</a>
+        </div>
+        <div class="info-item">
+          <div class="info-label">MEM Round Trips</div>
+          <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20MEM%20departing%20August%2016%202025%20returning%20August%2019%202025" 
+             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Luke: RIC↔MEM</a>
+          <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20MEM%20departing%20August%2016%202025%20returning%20August%2019%202025" 
+             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Dad: PDX↔MEM</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card mt-2">
+      <h2>Your Preferences</h2>
+      <div id="preferences-summary">
+        <p class="summary-empty">No preferences marked yet. Click "Prefer" on flights to track your choices.</p>
+      </div>
+      <button class="btn btn-secondary mt-1" onclick="clearAllPreferences()">Clear All Preferences</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Trip planning for Luke & Dad</p>
+    <p class="price-note">Flight prices link to Google Flights for live pricing</p>
+  </footer>
+
+  <script src="js/preferences.js"></script>
+</body>
+</html>
