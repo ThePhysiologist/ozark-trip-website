@@ -3,281 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logistics | Ozark Folk Center Trip</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Logistics - Ozark Folk Center Trip</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-content">
-      <h1 class="site-title">
-        <a href="index.html">Ozark Folk Center</a>
-      </h1>
-      <p class="site-subtitle">August 16-19, 2025</p>
+    <div class="header-main">
+      <div class="site-brand">
+        <div class="site-logo">🏔️</div>
+        <div>
+          <h1 class="site-title"><a href="index.html">Ozark Adventure</a></h1>
+          <p class="site-subtitle">Luke & Dad's Trip Planning</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Overview</a>
+        <a href="explore.html">Explore</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="flights.html">Flights</a>
+        <a href="logistics.html" class="active">Logistics</a>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <a href="index.html">Overview</a>
-      <a href="flights.html">Flights</a>
-      <a href="logistics.html" class="active">Logistics</a>
-    </nav>
   </header>
 
+  <div class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a> <span>›</span> Logistics
+    </div>
+  </div>
+
   <main class="main-content">
-    <h1>Logistics</h1>
-    <p>Car rental, lodging options, and ground transportation details.</p>
+    <div class="section-header">
+      <h2>Trip Logistics</h2>
+      <p>Lodging, car rental, and practical planning details</p>
+    </div>
 
-    <section class="card">
-      <h2>Rental Car</h2>
-      <p>We'll rent a car at whichever airport we fly into and drive to Mountain View. Estimates below are for a 4-day rental (Aug 16-19) for a mid-size or larger vehicle.</p>
+    <!-- Lodging Section -->
+    <section class="mb-3">
+      <h3 style="color: var(--color-forest); margin-bottom: 1rem;">Lodging Options</h3>
       
+      <div class="grid-2">
+        <div class="card">
+          <h4 class="card-title">Cabins at Dry Creek</h4>
+          <p>On-site at Ozark Folk Center. Walk to the Craft Village, Skillet Restaurant, and evening events. Ozark-style rooms with modern amenities.</p>
+          <div class="info-grid" style="margin: 1rem 0;">
+            <div class="info-item">
+              <div class="info-label">Rates</div>
+              <div class="info-value">~$100–150/night</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Sleeps</div>
+              <div class="info-value">2-4 per room</div>
+            </div>
+          </div>
+          <p class="text-muted" style="font-size: 0.9rem;">Includes pool access (summer), shuttle to events, and discounted Craft Village admission.</p>
+          <a href="https://www.arkansasstateparks.com/parks/ozark-folk-center-state-park/cabins-dry-creek" 
+             target="_blank" class="btn btn-primary mt-2">Check Availability</a>
+        </div>
+
+        <div class="card">
+          <h4 class="card-title">Airbnb / VRBO</h4>
+          <p>Cabins, cottages, and homes in the Mountain View area. More space and kitchen access. Good for longer stays or groups.</p>
+          <div class="info-grid" style="margin: 1rem 0;">
+            <div class="info-item">
+              <div class="info-label">Rates</div>
+              <div class="info-value">$80–200/night</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Options</div>
+              <div class="info-value">Many available</div>
+            </div>
+          </div>
+          <p class="text-muted" style="font-size: 0.9rem;">Search for "Mountain View, AR" or "Blanchard Springs" area. Book early for best selection.</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <a href="https://www.airbnb.com/s/Mountain-View--AR/homes?checkin=2025-04-16&checkout=2025-04-19&adults=2" 
+               target="_blank" class="btn btn-secondary btn-small">Airbnb</a>
+            <a href="https://www.vrbo.com/search?destination=Mountain%20View%2C%20AR&startDate=2025-04-16&endDate=2025-04-19" 
+               target="_blank" class="btn btn-secondary btn-small">VRBO</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lodging Status Toggle -->
+      <div class="card mt-2" style="background: var(--color-cream);">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+            <input type="checkbox" id="lodging-booked" style="width: 20px; height: 20px; accent-color: var(--color-success);">
+            <strong>Lodging booked!</strong>
+          </label>
+          <span class="text-muted" style="font-size: 0.9rem;">Check this when you've made your reservation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Car Rental Section -->
+    <section class="mb-3">
+      <h3 style="color: var(--color-forest); margin-bottom: 1rem;">Car Rental</h3>
+      
+      <p style="margin-bottom: 1rem;">You'll need a car to get from the airport to Mountain View and to explore the area. Pick up at arrival airport, return at departure airport.</p>
+
       <div class="destination-grid">
-        <div class="destination-card">
-          <div class="destination-header stl">
-            <h3>STL Car Rental</h3>
-            <div class="airport-code">St. Louis Lambert</div>
+        <div class="card">
+          <h4 style="color: var(--color-stl);">From St. Louis (STL)</h4>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Distance</div>
+              <div class="info-value">~300 mi</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Drive Time</div>
+              <div class="info-value">4.5 hours</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Est. Gas</div>
+              <div class="info-value">~$60–80</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Est. Rental</div>
+              <div class="info-value">$180–250</div>
+            </div>
           </div>
-          <div class="destination-body">
-            <div class="destination-stat">
-              <span class="stat-label">Est. 4-day rental</span>
-              <span class="stat-value">$200-250</span>
-            </div>
-            <div class="destination-stat">
-              <span class="stat-label">Drive to Mountain View</span>
-              <span class="stat-value">~4.5 hours (300 mi)</span>
-            </div>
-            <div class="destination-stat">
-              <span class="stat-label">Gas estimate (round trip)</span>
-              <span class="stat-value">~$80-100</span>
-            </div>
-            <a href="https://www.kayak.com/cars/STL-a14948/2025-08-16/2025-08-19" 
-               target="_blank" class="btn btn-primary btn-small mt-1">
-              Search Kayak
-            </a>
-            <a href="https://www.google.com/travel/cars?q=car%20rental%20STL%20August%2016-19%202025" 
-               target="_blank" class="btn btn-secondary btn-small mt-1">
-              Search Google
-            </a>
-          </div>
+          <a href="https://www.kayak.com/cars/St-Louis,MO-c25894/2025-04-16/2025-04-19" 
+             target="_blank" class="btn btn-secondary btn-small mt-2">Search STL Rentals</a>
         </div>
+
+        <div class="card">
+          <h4 style="color: var(--color-lit);">From Little Rock (LIT)</h4>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Distance</div>
+              <div class="info-value">~100 mi</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Drive Time</div>
+              <div class="info-value">2 hours</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Est. Gas</div>
+              <div class="info-value">~$25–35</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Est. Rental</div>
+              <div class="info-value">$160–220</div>
+            </div>
+          </div>
+          <a href="https://www.kayak.com/cars/Little-Rock,AR-c17213/2025-04-16/2025-04-19" 
+             target="_blank" class="btn btn-secondary btn-small mt-2">Search LIT Rentals</a>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--color-mem);">From Memphis (MEM)</h4>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Distance</div>
+              <div class="info-value">~160 mi</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Drive Time</div>
+              <div class="info-value">3 hours</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Est. Gas</div>
+              <div class="info-value">~$40–50</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Est. Rental</div>
+              <div class="info-value">$170–230</div>
+            </div>
+          </div>
+          <a href="https://www.kayak.com/cars/Memphis,TN-c24043/2025-04-16/2025-04-19" 
+             target="_blank" class="btn btn-secondary btn-small mt-2">Search MEM Rentals</a>
+        </div>
+      </div>
+
+      <!-- Car Rental Status Toggle -->
+      <div class="card mt-2" style="background: var(--color-cream);">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+            <input type="checkbox" id="car-booked" style="width: 20px; height: 20px; accent-color: var(--color-success);">
+            <strong>Car rental booked!</strong>
+          </label>
+          <span class="text-muted" style="font-size: 0.9rem;">Check this when you've made your reservation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Driving Routes -->
+    <section class="mb-3">
+      <h3 style="color: var(--color-forest); margin-bottom: 1rem;">Driving Routes to Mountain View</h3>
+      
+      <div class="card">
+        <p style="margin-bottom: 1rem;">All three airports have scenic routes to Mountain View through the Ozark foothills. The drives are easy with minimal traffic once you leave the metro areas.</p>
         
-        <div class="destination-card">
-          <div class="destination-header lit">
-            <h3>LIT Car Rental</h3>
-            <div class="airport-code">Little Rock Clinton National</div>
-          </div>
-          <div class="destination-body">
-            <div class="destination-stat">
-              <span class="stat-label">Est. 4-day rental</span>
-              <span class="stat-value">$180-220</span>
-            </div>
-            <div class="destination-stat">
-              <span class="stat-label">Drive to Mountain View</span>
-              <span class="stat-value">~2 hours (100 mi)</span>
-            </div>
-            <div class="destination-stat">
-              <span class="stat-label">Gas estimate (round trip)</span>
-              <span class="stat-value">~$30-40</span>
-            </div>
-            <a href="https://www.kayak.com/cars/LIT-a14948/2025-08-16/2025-08-19" 
-               target="_blank" class="btn btn-primary btn-small mt-1">
-              Search Kayak
-            </a>
-            <a href="https://www.google.com/travel/cars?q=car%20rental%20LIT%20August%2016-19%202025" 
-               target="_blank" class="btn btn-secondary btn-small mt-1">
-              Search Google
-            </a>
-          </div>
-        </div>
-        
-        <div class="destination-card">
-          <div class="destination-header mem">
-            <h3>MEM Car Rental</h3>
-            <div class="airport-code">Memphis International</div>
-          </div>
-          <div class="destination-body">
-            <div class="destination-stat">
-              <span class="stat-label">Est. 4-day rental</span>
-              <span class="stat-value">$180-220</span>
-            </div>
-            <div class="destination-stat">
-              <span class="stat-label">Drive to Mountain View</span>
-              <span class="stat-value">~3 hours (160 mi)</span>
-            </div>
-            <div class="destination-stat">
-              <span class="stat-label">Gas estimate (round trip)</span>
-              <span class="stat-value">~$50-60</span>
-            </div>
-            <a href="https://www.kayak.com/cars/MEM-a14948/2025-08-16/2025-08-19" 
-               target="_blank" class="btn btn-primary btn-small mt-1">
-              Search Kayak
-            </a>
-            <a href="https://www.google.com/travel/cars?q=car%20rental%20MEM%20August%2016-19%202025" 
-               target="_blank" class="btn btn-secondary btn-small mt-1">
-              Search Google
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="destination-note mt-2">
-        <strong>Note:</strong> Prices shown are estimates based on typical August 2025 rates. Book early for best rates. A mid-size SUV or sedan works well for the Ozark roads.
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>From</th>
+              <th>Route</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>St. Louis</strong></td>
+              <td>I-44 → US-63 South</td>
+              <td>Pass through Rolla, then scenic 63 through the Ozarks. Stop in West Plains for food/gas.</td>
+            </tr>
+            <tr>
+              <td><strong>Little Rock</strong></td>
+              <td>US-65 North → AR-5/9</td>
+              <td>Shortest drive. Scenic once you hit the foothills north of Conway.</td>
+            </tr>
+            <tr>
+              <td><strong>Memphis</strong></td>
+              <td>I-40 → US-67 → AR-5</td>
+              <td>Cross the Delta, then climb into the Ozarks. Good BBQ stops in Memphis before you leave!</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Lodging</h2>
-      <p>Mountain View and the surrounding area has limited hotels but plenty of vacation rental options. You're handling VRBO/Airbnb booking, but here are quick links:</p>
+    <!-- Practical Info -->
+    <section>
+      <h3 style="color: var(--color-forest); margin-bottom: 1rem;">Practical Info</h3>
       
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">Airbnb</div>
-          <a href="https://www.airbnb.com/s/Mountain-View--Arkansas/homes?checkin=2025-08-16&checkout=2025-08-19&adults=2" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            Search Mountain View
-          </a>
+      <div class="grid-2">
+        <div class="card">
+          <h4 style="margin-bottom: 0.75rem;">April Weather</h4>
+          <p>Spring in the Ozarks is beautiful but variable. Expect daytime highs in the 60s-70s and nighttime lows in the 40s-50s. Rain is possible, so pack layers and a light jacket.</p>
+          <div class="info-grid mt-2">
+            <div class="info-item">
+              <div class="info-label">Avg High</div>
+              <div class="info-value">68°F</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Avg Low</div>
+              <div class="info-value">45°F</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Cave Temp</div>
+              <div class="info-value">58°F always</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Rain Days</div>
+              <div class="info-value">~10/month</div>
+            </div>
+          </div>
         </div>
-        <div class="info-item">
-          <div class="info-label">VRBO</div>
-          <a href="https://www.vrbo.com/search?destination=Mountain%20View%2C%20Arkansas&startDate=2025-08-16&endDate=2025-08-19&adults=2" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            Search Mountain View
-          </a>
-        </div>
-        <div class="info-item">
-          <div class="info-label">State Park Cabins</div>
-          <a href="https://www.arkansasstateparks.com/parks/ozark-folk-center-state-park" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            Cabins at Dry Creek
-          </a>
-        </div>
-      </div>
-      
-      <div class="destination-note mt-2">
-        <strong>On-site option:</strong> The Ozark Folk Center's "Cabins at Dry Creek" offer newly renovated rooms within the park, including pool access and discounted event tickets. Worth checking availability.
-      </div>
-    </section>
 
-    <section class="card">
-      <h2>Ground Transportation Summary</h2>
-      
-      <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--color-border);">
-            <th style="text-align: left; padding: 0.75rem;">Route</th>
-            <th style="text-align: center; padding: 0.75rem;">STL</th>
-            <th style="text-align: center; padding: 0.75rem;">LIT</th>
-            <th style="text-align: center; padding: 0.75rem;">MEM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid var(--color-border);">
-            <td style="padding: 0.75rem;">Drive Time</td>
-            <td style="text-align: center; padding: 0.75rem;">4.5 hrs</td>
-            <td style="text-align: center; padding: 0.75rem; background: var(--color-selected);">2 hrs</td>
-            <td style="text-align: center; padding: 0.75rem;">3 hrs</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--color-border);">
-            <td style="padding: 0.75rem;">Distance</td>
-            <td style="text-align: center; padding: 0.75rem;">300 mi</td>
-            <td style="text-align: center; padding: 0.75rem; background: var(--color-selected);">100 mi</td>
-            <td style="text-align: center; padding: 0.75rem;">160 mi</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--color-border);">
-            <td style="padding: 0.75rem;">Est. Rental (4 days)</td>
-            <td style="text-align: center; padding: 0.75rem;">$200-250</td>
-            <td style="text-align: center; padding: 0.75rem;">$180-220</td>
-            <td style="text-align: center; padding: 0.75rem;">$180-220</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--color-border);">
-            <td style="padding: 0.75rem;">Est. Gas (round trip)</td>
-            <td style="text-align: center; padding: 0.75rem;">$80-100</td>
-            <td style="text-align: center; padding: 0.75rem; background: var(--color-selected);">$30-40</td>
-            <td style="text-align: center; padding: 0.75rem;">$50-60</td>
-          </tr>
-          <tr>
-            <td style="padding: 0.75rem;"><strong>Total Ground Cost</strong></td>
-            <td style="text-align: center; padding: 0.75rem;"><strong>$280-350</strong></td>
-            <td style="text-align: center; padding: 0.75rem; background: var(--color-selected);"><strong>$210-260</strong></td>
-            <td style="text-align: center; padding: 0.75rem;"><strong>$230-280</strong></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <p class="mt-2" style="font-size: 0.9rem; color: var(--color-text-muted);">
-        Green highlighting shows lowest values. STL has higher ground costs but offers the Clifford connection.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>STL Scenario: Early Arrival</h2>
-      <p>If we go via St. Louis, Dad could fly in August 14 or 15 to visit Clifford before we all head to Arkansas. Here's how that would work:</p>
-      
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">Dad arrives STL</div>
-          <div class="info-value">Aug 14 or 15</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Stays with</div>
-          <div class="info-value">Clifford</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Luke arrives STL</div>
-          <div class="info-value">Aug 16 evening</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Clifford joins?</div>
-          <div class="info-value">Optional</div>
-        </div>
-      </div>
-      
-      <div class="destination-note mt-2">
-        <strong>Logistics:</strong> If Dad arrives early, he wouldn't need to rent the car until Aug 16 when Luke arrives. Clifford could pick him up from the airport. Then all three (or two) drive to Mountain View together Saturday evening or Sunday morning.
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Useful Links</h2>
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">Ozark Folk Center</div>
-          <a href="https://www.arkansasstateparks.com/parks/ozark-folk-center-state-park" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            Official Site
-          </a>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Mountain View Chamber</div>
-          <a href="https://mountainviewarkansas.com/" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            Town Info
-          </a>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Event Tickets</div>
-          <a href="https://ozarkfolkcenter.ticketleap.com/" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            TicketLeap
-          </a>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Weather</div>
-          <a href="https://weather.com/weather/tenday/l/Mountain+View+AR" 
-             target="_blank" class="btn btn-secondary btn-small mt-1">
-            10-Day Forecast
-          </a>
+        <div class="card">
+          <h4 style="margin-bottom: 0.75rem;">What to Pack</h4>
+          <ul style="list-style: none; font-size: 0.95rem;">
+            <li style="padding: 0.3rem 0;">✓ Layers (mornings are cool)</li>
+            <li style="padding: 0.3rem 0;">✓ Light rain jacket</li>
+            <li style="padding: 0.3rem 0;">✓ Comfortable walking shoes</li>
+            <li style="padding: 0.3rem 0;">✓ Sweater for cave tour (58°F)</li>
+            <li style="padding: 0.3rem 0;">✓ Folding chairs for square music</li>
+            <li style="padding: 0.3rem 0;">✓ Camera / phone charger</li>
+            <li style="padding: 0.3rem 0;">✓ Cash for artisan purchases</li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Trip planning for Luke & Dad</p>
-    <p class="price-note">Flight prices link to Google Flights for live pricing</p>
+    <p>Ozark Trip Planner · Car rental prices via <a href="https://www.kayak.com" target="_blank">Kayak</a></p>
   </footer>
 
   <script src="js/preferences.js"></script>
+  <script>
+    // Lodging booked checkbox
+    const lodgingCheckbox = document.getElementById('lodging-booked');
+    const carCheckbox = document.getElementById('car-booked');
+    
+    // Load saved state
+    const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+    if (prefs['lodging-booked']) lodgingCheckbox.checked = true;
+    if (prefs['car-booked']) carCheckbox.checked = true;
+    
+    // Save on change
+    lodgingCheckbox.addEventListener('change', () => {
+      const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+      if (lodgingCheckbox.checked) {
+        prefs['lodging-booked'] = true;
+      } else {
+        delete prefs['lodging-booked'];
+      }
+      localStorage.setItem('ozarkPrefs', JSON.stringify(prefs));
+    });
+    
+    carCheckbox.addEventListener('change', () => {
+      const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+      if (carCheckbox.checked) {
+        prefs['car-booked'] = true;
+      } else {
+        delete prefs['car-booked'];
+      }
+      localStorage.setItem('ozarkPrefs', JSON.stringify(prefs));
+    });
+  </script>
 </body>
 </html>

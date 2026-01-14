@@ -3,207 +3,325 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trip Overview | Ozark Folk Center Trip</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Ozark Folk Center Trip - April 2025</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-content">
-      <h1 class="site-title">
-        <a href="index.html">Ozark Folk Center</a>
-      </h1>
-      <p class="site-subtitle">August 16-19, 2025</p>
+    <div class="header-main">
+      <div class="site-brand">
+        <div class="site-logo">🏔️</div>
+        <div>
+          <h1 class="site-title"><a href="index.html">Ozark Adventure</a></h1>
+          <p class="site-subtitle">Luke & Dad's Trip Planning</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Overview</a>
+        <a href="explore.html">Explore</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="flights.html">Flights</a>
+        <a href="logistics.html">Logistics</a>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <a href="index.html" class="active">Overview</a>
-      <a href="flights.html">Flights</a>
-      <a href="logistics.html">Logistics</a>
-    </nav>
   </header>
 
-  <main class="main-content">
-    <section class="hero">
-      <h1>Ozark Folk Center</h1>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ozark Folk Center State Park</h1>
       <p class="location">Mountain View, Arkansas</p>
       <div class="hero-dates">
         <div class="hero-date">
           <div class="label">Arrive</div>
-          <div class="value">Sat, Aug 16</div>
+          <div class="value">Wed, Apr 16</div>
         </div>
         <div class="hero-date">
           <div class="label">Depart</div>
-          <div class="value">Tue, Aug 19</div>
+          <div class="value">Sat, Apr 19</div>
+        </div>
+        <div class="hero-date">
+          <div class="label">Duration</div>
+          <div class="value">3 Nights</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>The Trip</h2>
-      <p>A long weekend at the Ozark Folk Center State Park for their music and crafts festival. The park features live folk music, artisan demonstrations, heritage gardens, and traditional Ozark culture.</p>
-      
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">Travelers</div>
-          <div class="info-value">Luke + Dad</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Optional</div>
-          <div class="info-value">Clifford (if via STL)</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Lodging</div>
-          <div class="info-value">VRBO/Airbnb</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Transport</div>
-          <div class="info-value">Rental Car</div>
-        </div>
+  <main class="main-content">
+    <!-- Dashboard: Countdown + Status -->
+    <div class="dashboard">
+      <div class="countdown-card">
+        <div class="countdown-number" id="countdown-days">--</div>
+        <div class="countdown-label">days until departure</div>
+        <div class="countdown-date">Wednesday, April 16, 2025</div>
       </div>
-    </section>
 
-    <h2>Choose a Destination Airport</h2>
-    <p>We can fly into one of three airports and drive to Mountain View. Each has different trade-offs.</p>
-
-    <div class="destination-grid">
-      
-      <div class="destination-card" data-destination="stl">
-        <div class="destination-header stl">
-          <h3>St. Louis</h3>
-          <div class="airport-code">STL - Lambert International</div>
-        </div>
-        <div class="destination-body">
-          <div class="destination-stat">
-            <span class="stat-label">Drive to Mountain View</span>
-            <span class="stat-value">~4.5 hours</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Distance</span>
-            <span class="stat-value">300 miles</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Flight options</span>
-            <span class="stat-value">Most frequent</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Est. car rental (4 days)</span>
-            <span class="stat-value">~$200-250</span>
-          </div>
-          <div class="destination-note highlight">
-            <strong>Dad's preference:</strong> Clifford lives here. Dad could arrive early to visit, and Clifford could join us for the trip.
-          </div>
-          <button class="pref-btn mt-1" data-pref="destination" data-value="stl">
-            Mark as Preferred
-          </button>
-        </div>
-      </div>
-      
-      <div class="destination-card" data-destination="lit">
-        <div class="destination-header lit">
-          <h3>Little Rock</h3>
-          <div class="airport-code">LIT - Clinton National</div>
-        </div>
-        <div class="destination-body">
-          <div class="destination-stat">
-            <span class="stat-label">Drive to Mountain View</span>
-            <span class="stat-value">~2 hours</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Distance</span>
-            <span class="stat-value">100 miles</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Flight options</span>
-            <span class="stat-value">Moderate</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Est. car rental (4 days)</span>
-            <span class="stat-value">~$180-220</span>
-          </div>
-          <div class="destination-note">
-            Shortest drive. Arkansas's main airport.
-          </div>
-          <button class="pref-btn mt-1" data-pref="destination" data-value="lit">
-            Mark as Preferred
-          </button>
+      <div class="status-card">
+        <h2>Planning Progress</h2>
+        <div class="status-list">
+          <a href="flights.html" class="status-item incomplete" id="status-flights">
+            <div class="status-icon">✈️</div>
+            <div class="status-text">
+              <strong>Book Flights</strong>
+              <span>Compare options for Luke & Dad</span>
+            </div>
+            <span class="status-action">View →</span>
+          </a>
+          <a href="logistics.html" class="status-item incomplete" id="status-lodging">
+            <div class="status-icon">🏠</div>
+            <div class="status-text">
+              <strong>Reserve Lodging</strong>
+              <span>Cabins at Dry Creek or Airbnb</span>
+            </div>
+            <span class="status-action">View →</span>
+          </a>
+          <a href="logistics.html" class="status-item incomplete" id="status-car">
+            <div class="status-icon">🚗</div>
+            <div class="status-text">
+              <strong>Rent a Car</strong>
+              <span>Pick up at arrival airport</span>
+            </div>
+            <span class="status-action">View →</span>
+          </a>
+          <a href="itinerary.html" class="status-item incomplete" id="status-itinerary">
+            <div class="status-icon">📋</div>
+            <div class="status-text">
+              <strong>Plan Activities</strong>
+              <span>Craft Village, caverns, music & more</span>
+            </div>
+            <span class="status-action">View →</span>
+          </a>
         </div>
       </div>
-      
-      <div class="destination-card" data-destination="mem">
-        <div class="destination-header mem">
-          <h3>Memphis</h3>
-          <div class="airport-code">MEM - Memphis International</div>
-        </div>
-        <div class="destination-body">
-          <div class="destination-stat">
-            <span class="stat-label">Drive to Mountain View</span>
-            <span class="stat-value">~3 hours</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Distance</span>
-            <span class="stat-value">160 miles</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Flight options</span>
-            <span class="stat-value">Good (hub)</span>
-          </div>
-          <div class="destination-stat">
-            <span class="stat-label">Est. car rental (4 days)</span>
-            <span class="stat-value">~$180-220</span>
-          </div>
-          <div class="destination-note">
-            FedEx hub with good connections. Medium drive.
-          </div>
-          <button class="pref-btn mt-1" data-pref="destination" data-value="mem">
-            Mark as Preferred
-          </button>
-        </div>
-      </div>
-      
     </div>
 
-    <section class="card">
-      <h2>Flight Constraints</h2>
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">Luke's Outbound</div>
-          <div class="info-value">Aug 16, after 6pm</div>
+    <!-- Quick Links -->
+    <section class="mb-3">
+      <div class="section-header">
+        <h2>Plan Your Adventure</h2>
+        <p>Everything you need to coordinate this trip</p>
+      </div>
+      
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title">What to See & Do</h3>
+          <p>Discover the Craft Village, explore Blanchard Springs Caverns, catch live music downtown, and float the Buffalo River.</p>
+          <a href="explore.html" class="btn btn-primary">Explore Attractions →</a>
         </div>
-        <div class="info-item">
-          <div class="info-label">Dad's Outbound</div>
-          <div class="info-value">Flexible (or early if STL)</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Both Return</div>
-          <div class="info-value">Aug 19, afternoon+</div>
+        <div class="card">
+          <h3 class="card-title">Build Your Itinerary</h3>
+          <p>Plan each day with suggested activities. Mix artisan workshops, cave tours, scenic hikes, and evening music.</p>
+          <a href="itinerary.html" class="btn btn-primary">Plan Days →</a>
         </div>
       </div>
-      <p class="mt-2">
-        <a href="flights.html" class="btn btn-primary">View Flight Options</a>
-      </p>
     </section>
 
-    <section class="card">
-      <h2>About Ozark Folk Center</h2>
-      <p>The Ozark Folk Center State Park is dedicated to preserving and presenting traditional Ozark music, crafts, and culture. Located in Mountain View (the "Folk Music Capital of the World"), visitors can:</p>
-      <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-        <li>Watch 20+ artisans demonstrate traditional crafts</li>
-        <li>Hear live folk music on the Blacksmith Stage throughout the day</li>
-        <li>Attend concerts at the 1,000-seat Ozark Highlands Theater</li>
-        <li>Explore the Heritage Herb Garden</li>
-        <li>Dine at the Skillet Restaurant for Southern cooking</li>
-      </ul>
-      <p><strong>Hours (Aug):</strong> Craft Village: Tue-Sat, 10am-5pm. Live music throughout the day.</p>
+    <!-- Airport Comparison -->
+    <section>
+      <div class="section-header">
+        <h2>Airport Options</h2>
+        <p>Three airports within driving distance of Mountain View</p>
+      </div>
+
+      <div class="destination-grid">
+        <!-- St. Louis -->
+        <div class="destination-card" data-airport="stl">
+          <div class="destination-header stl">
+            <h3>St. Louis</h3>
+            <span class="airport-code">Lambert International (STL)</span>
+          </div>
+          <div class="destination-body">
+            <div class="destination-stat">
+              <span class="stat-label">Drive to Mountain View</span>
+              <span class="stat-value">4.5 hours</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Distance</span>
+              <span class="stat-value">~300 miles</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Est. Rental + Gas</span>
+              <span class="stat-value">$280–350</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Flight Options</span>
+              <span class="stat-value">Most routes</span>
+            </div>
+            <div class="destination-note highlight">
+              <strong>Clifford lives here!</strong> Dad could arrive early (Apr 14–15) to visit before meeting Luke.
+            </div>
+            <button class="pref-btn mt-2" data-pref="airport-stl">★ Prefer STL</button>
+          </div>
+        </div>
+
+        <!-- Little Rock -->
+        <div class="destination-card" data-airport="lit">
+          <div class="destination-header lit">
+            <h3>Little Rock</h3>
+            <span class="airport-code">Clinton National (LIT)</span>
+          </div>
+          <div class="destination-body">
+            <div class="destination-stat">
+              <span class="stat-label">Drive to Mountain View</span>
+              <span class="stat-value">2 hours</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Distance</span>
+              <span class="stat-value">~100 miles</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Est. Rental + Gas</span>
+              <span class="stat-value">$210–260</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Flight Options</span>
+              <span class="stat-value">Good connections</span>
+            </div>
+            <div class="destination-note">
+              Shortest drive to Mountain View. Arkansas state capital with additional dining/hotel options if needed.
+            </div>
+            <button class="pref-btn mt-2" data-pref="airport-lit">★ Prefer LIT</button>
+          </div>
+        </div>
+
+        <!-- Memphis -->
+        <div class="destination-card" data-airport="mem">
+          <div class="destination-header mem">
+            <h3>Memphis</h3>
+            <span class="airport-code">Memphis International (MEM)</span>
+          </div>
+          <div class="destination-body">
+            <div class="destination-stat">
+              <span class="stat-label">Drive to Mountain View</span>
+              <span class="stat-value">3 hours</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Distance</span>
+              <span class="stat-value">~160 miles</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Est. Rental + Gas</span>
+              <span class="stat-value">$230–280</span>
+            </div>
+            <div class="destination-stat">
+              <span class="stat-label">Flight Options</span>
+              <span class="stat-value">FedEx hub, good</span>
+            </div>
+            <div class="destination-note">
+              Major FedEx hub means good connections. Scenic drive through the Ozark foothills. BBQ pit stop potential.
+            </div>
+            <button class="pref-btn mt-2" data-pref="airport-mem">★ Prefer MEM</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Season Info -->
+    <section class="mt-3">
+      <div class="card">
+        <h3 class="card-title">April at the Folk Center</h3>
+        <p>The 2025 season opens <strong>Tuesday, April 15</strong>, so you'll be there right at the start! The Craft Village, Gift Shop, and Skillet Restaurant will all be freshly open for the year.</p>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">Craft Village</div>
+            <div class="info-value">Tue–Sat, 10am–5pm</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Live Music</div>
+            <div class="info-value">6 shows daily</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Admission</div>
+            <div class="info-value">$15 adult</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Weather</div>
+            <div class="info-value">60s–70s°F</div>
+          </div>
+        </div>
+        <p class="text-muted mt-2">Spring in the Ozarks is beautiful, with mild temperatures and blooming wildflowers. Pack layers for cool mornings and occasional rain.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Trip planning for Luke & Dad</p>
-    <p class="price-note">Flight prices link to Google Flights for live pricing</p>
+    <p>Ozark Trip Planner · Flight prices via <a href="https://www.kayak.com" target="_blank">Kayak</a> · Updated January 2025</p>
   </footer>
 
   <script src="js/preferences.js"></script>
+  <script>
+    // Countdown calculator
+    function updateCountdown() {
+      const tripDate = new Date('2025-04-16T00:00:00');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      const diffTime = tripDate - today;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      const countdownEl = document.getElementById('countdown-days');
+      if (countdownEl) {
+        if (diffDays > 0) {
+          countdownEl.textContent = diffDays;
+        } else if (diffDays === 0) {
+          countdownEl.textContent = "Today!";
+          document.querySelector('.countdown-label').textContent = "The adventure begins";
+        } else {
+          countdownEl.textContent = Math.abs(diffDays);
+          document.querySelector('.countdown-label').textContent = "days since the trip";
+        }
+      }
+    }
+    
+    // Update status based on preferences
+    function updateStatusItems() {
+      const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+      
+      // Check if any flights are marked as preferred
+      const hasFlightPref = Object.keys(prefs).some(k => k.startsWith('flight-') && prefs[k]);
+      const flightStatus = document.getElementById('status-flights');
+      if (flightStatus) {
+        if (hasFlightPref) {
+          flightStatus.classList.remove('incomplete');
+          flightStatus.classList.add('pending');
+          flightStatus.querySelector('.status-text span').textContent = 'Preferences marked - ready to book';
+        }
+      }
+      
+      // Check lodging
+      const hasLodgingPref = prefs['lodging-booked'];
+      const lodgingStatus = document.getElementById('status-lodging');
+      if (lodgingStatus && hasLodgingPref) {
+        lodgingStatus.classList.remove('incomplete', 'pending');
+        lodgingStatus.classList.add('complete');
+        lodgingStatus.querySelector('.status-text span').textContent = 'Booked!';
+      }
+      
+      // Check car
+      const hasCarPref = prefs['car-booked'];
+      const carStatus = document.getElementById('status-car');
+      if (carStatus && hasCarPref) {
+        carStatus.classList.remove('incomplete', 'pending');
+        carStatus.classList.add('complete');
+        carStatus.querySelector('.status-text span').textContent = 'Booked!';
+      }
+      
+      // Check itinerary
+      const hasItineraryItems = Object.keys(prefs).some(k => k.startsWith('activity-') && prefs[k]);
+      const itineraryStatus = document.getElementById('status-itinerary');
+      if (itineraryStatus && hasItineraryItems) {
+        itineraryStatus.classList.remove('incomplete');
+        itineraryStatus.classList.add('pending');
+        itineraryStatus.querySelector('.status-text span').textContent = 'Activities selected';
+      }
+    }
+    
+    // Initialize
+    updateCountdown();
+    updateStatusItems();
+  </script>
 </body>
 </html>

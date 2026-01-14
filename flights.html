@@ -3,30 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flight Options | Ozark Folk Center Trip</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Flights - Ozark Folk Center Trip</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-content">
-      <h1 class="site-title">
-        <a href="index.html">Ozark Folk Center</a>
-      </h1>
-      <p class="site-subtitle">August 16-19, 2025</p>
+    <div class="header-main">
+      <div class="site-brand">
+        <div class="site-logo">🏔️</div>
+        <div>
+          <h1 class="site-title"><a href="index.html">Ozark Adventure</a></h1>
+          <p class="site-subtitle">Luke & Dad's Trip Planning</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Overview</a>
+        <a href="explore.html">Explore</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="flights.html" class="active">Flights</a>
+        <a href="logistics.html">Logistics</a>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <a href="index.html">Overview</a>
-      <a href="flights.html" class="active">Flights</a>
-      <a href="logistics.html">Logistics</a>
-    </nav>
   </header>
 
+  <div class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a> <span>›</span> Flight Options
+    </div>
+  </div>
+
   <main class="main-content">
-    <h1>Flight Options</h1>
-    <p>Click any flight link to see live prices on Google Flights. Use the filters to narrow down options, and mark your preferences.</p>
+    <div class="section-header">
+      <h2>Flight Options</h2>
+      <p>Click any flight link to see live prices on Kayak. Mark preferences to track your top choices.</p>
+    </div>
 
     <div class="filter-bar">
       <span style="font-weight: 500; margin-right: 0.5rem;">Filter by airport:</span>
@@ -49,169 +62,114 @@
         <span class="traveler-origin">Richmond, VA (RIC)</span>
       </div>
       
-      <h3>Outbound: Saturday, August 16 (after 6pm)</h3>
+      <h3 style="margin-bottom: 1rem; color: var(--color-forest);">Outbound: Wednesday, April 16 (after 6pm)</h3>
       
       <div class="flight-grid">
-        
-        <!-- STL Flights -->
+        <!-- STL -->
         <div class="flight-card" data-airport="stl" data-traveler="luke" data-direction="outbound">
           <div class="flight-info">
-            <h4>Richmond → St. Louis</h4>
-            <div class="flight-route">RIC → STL</div>
+            <h4>Richmond → St. Louis <span class="badge badge-stl">STL</span></h4>
+            <div class="flight-route">RIC → STL · Evening departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Evening departures
-              </span>
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                1 stop typical
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
+              <span class="flight-detail">🚗 4.5 hr drive to MV</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20STL%20on%20August%2016%202025%20after%206pm" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="luke-stl-out">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/RIC-STL/2025-04-16?fs=takeoff=1800" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-luke-stl-out">Prefer</button>
           </div>
         </div>
-        
-        <!-- LIT Flights -->
+
+        <!-- LIT -->
         <div class="flight-card" data-airport="lit" data-traveler="luke" data-direction="outbound">
           <div class="flight-info">
-            <h4>Richmond → Little Rock</h4>
-            <div class="flight-route">RIC → LIT</div>
+            <h4>Richmond → Little Rock <span class="badge badge-lit">LIT</span></h4>
+            <div class="flight-route">RIC → LIT · Evening departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Evening departures
-              </span>
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                1 stop typical
-              </span>
+              <span class="flight-detail">⏱️ 1-2 stops</span>
+              <span class="flight-detail">🚗 2 hr drive to MV</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20LIT%20on%20August%2016%202025%20after%206pm" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="luke-lit-out">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/RIC-LIT/2025-04-16?fs=takeoff=1800" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-luke-lit-out">Prefer</button>
           </div>
         </div>
-        
-        <!-- MEM Flights -->
+
+        <!-- MEM -->
         <div class="flight-card" data-airport="mem" data-traveler="luke" data-direction="outbound">
           <div class="flight-info">
-            <h4>Richmond → Memphis</h4>
-            <div class="flight-route">RIC → MEM</div>
+            <h4>Richmond → Memphis <span class="badge badge-mem">MEM</span></h4>
+            <div class="flight-route">RIC → MEM · Evening departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Evening departures
-              </span>
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                1 stop typical
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
+              <span class="flight-detail">🚗 3 hr drive to MV</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20MEM%20on%20August%2016%202025%20after%206pm" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="luke-mem-out">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/RIC-MEM/2025-04-16?fs=takeoff=1800" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-luke-mem-out">Prefer</button>
           </div>
         </div>
-        
       </div>
-      
-      <h3 class="mt-2">Return: Tuesday, August 19 (afternoon or later)</h3>
+
+      <h3 style="margin: 2rem 0 1rem; color: var(--color-forest);">Return: Saturday, April 19 (afternoon+)</h3>
       
       <div class="flight-grid">
-        
+        <!-- STL Return -->
         <div class="flight-card" data-airport="stl" data-traveler="luke" data-direction="return">
           <div class="flight-info">
-            <h4>St. Louis → Richmond</h4>
-            <div class="flight-route">STL → RIC</div>
+            <h4>St. Louis → Richmond <span class="badge badge-stl">STL</span></h4>
+            <div class="flight-route">STL → RIC · Afternoon departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Afternoon+ departures
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
+              <span class="flight-detail">📍 Depart MV by ~10am</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20STL%20to%20RIC%20on%20August%2019%202025%20afternoon" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="luke-stl-ret">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/STL-RIC/2025-04-19?fs=takeoff=1200" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-luke-stl-ret">Prefer</button>
           </div>
         </div>
-        
+
+        <!-- LIT Return -->
         <div class="flight-card" data-airport="lit" data-traveler="luke" data-direction="return">
           <div class="flight-info">
-            <h4>Little Rock → Richmond</h4>
-            <div class="flight-route">LIT → RIC</div>
+            <h4>Little Rock → Richmond <span class="badge badge-lit">LIT</span></h4>
+            <div class="flight-route">LIT → RIC · Afternoon departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Afternoon+ departures
-              </span>
+              <span class="flight-detail">⏱️ 1-2 stops</span>
+              <span class="flight-detail">📍 More flexibility</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20LIT%20to%20RIC%20on%20August%2019%202025%20afternoon" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="luke-lit-ret">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/LIT-RIC/2025-04-19?fs=takeoff=1200" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-luke-lit-ret">Prefer</button>
           </div>
         </div>
-        
+
+        <!-- MEM Return -->
         <div class="flight-card" data-airport="mem" data-traveler="luke" data-direction="return">
           <div class="flight-info">
-            <h4>Memphis → Richmond</h4>
-            <div class="flight-route">MEM → RIC</div>
+            <h4>Memphis → Richmond <span class="badge badge-mem">MEM</span></h4>
+            <div class="flight-route">MEM → RIC · Afternoon departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Afternoon+ departures
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
+              <span class="flight-detail">📍 BBQ stop possible</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20MEM%20to%20RIC%20on%20August%2019%202025%20afternoon" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="luke-mem-ret">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/MEM-RIC/2025-04-19?fs=takeoff=1200" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-luke-mem-ret">Prefer</button>
           </div>
         </div>
-        
       </div>
     </section>
 
@@ -222,221 +180,231 @@
         <span class="traveler-origin">Portland, OR (PDX)</span>
       </div>
       
-      <h3>Outbound: Saturday, August 16 (flexible, or earlier for STL)</h3>
+      <h3 style="margin-bottom: 1rem; color: var(--color-forest);">Outbound: Wednesday, April 16 (flexible)</h3>
       
       <div class="flight-grid">
-        
+        <!-- STL -->
         <div class="flight-card" data-airport="stl" data-traveler="dad" data-direction="outbound">
           <div class="flight-info">
-            <h4>Portland → St. Louis</h4>
-            <div class="flight-route">PDX → STL</div>
+            <h4>Portland → St. Louis <span class="badge badge-stl">STL</span></h4>
+            <div class="flight-route">PDX → STL · Any time</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Flexible timing
-              </span>
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                1 stop typical
-              </span>
-            </div>
-            <div class="destination-note highlight mt-1" style="padding: 0.5rem; font-size: 0.85rem;">
-              Could arrive Aug 14-15 to visit Clifford first
+              <span class="flight-detail">⏱️ 1 stop typical</span>
+              <span class="flight-detail">⭐ Clifford option!</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20STL%20on%20August%2016%202025" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View Aug 16
-            </a>
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20STL%20on%20August%2014%202025" 
-               target="_blank" 
-               class="btn btn-secondary btn-small">
-              View Aug 14
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="dad-stl-out">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/PDX-STL/2025-04-16" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-dad-stl-out">Prefer</button>
           </div>
         </div>
-        
+
+        <!-- LIT -->
         <div class="flight-card" data-airport="lit" data-traveler="dad" data-direction="outbound">
           <div class="flight-info">
-            <h4>Portland → Little Rock</h4>
-            <div class="flight-route">PDX → LIT</div>
+            <h4>Portland → Little Rock <span class="badge badge-lit">LIT</span></h4>
+            <div class="flight-route">PDX → LIT · Any time</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Any time Aug 16
-              </span>
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                1-2 stops typical
-              </span>
+              <span class="flight-detail">⏱️ 1-2 stops</span>
+              <span class="flight-detail">🚗 Shortest drive</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20LIT%20on%20August%2016%202025" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="dad-lit-out">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/PDX-LIT/2025-04-16" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-dad-lit-out">Prefer</button>
           </div>
         </div>
-        
+
+        <!-- MEM -->
         <div class="flight-card" data-airport="mem" data-traveler="dad" data-direction="outbound">
           <div class="flight-info">
-            <h4>Portland → Memphis</h4>
-            <div class="flight-route">PDX → MEM</div>
+            <h4>Portland → Memphis <span class="badge badge-mem">MEM</span></h4>
+            <div class="flight-route">PDX → MEM · Any time</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Any time Aug 16
-              </span>
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                1 stop typical
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
+              <span class="flight-detail">✈️ FedEx hub</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20MEM%20on%20August%2016%202025" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="dad-mem-out">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/PDX-MEM/2025-04-16" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-dad-mem-out">Prefer</button>
           </div>
         </div>
-        
       </div>
-      
-      <h3 class="mt-2">Return: Tuesday, August 19 (afternoon or later)</h3>
+
+      <!-- STL Early Arrival Option -->
+      <div class="card mt-2" style="border-color: var(--color-gold); background: var(--color-gold-soft);">
+        <h4 style="color: var(--color-forest); margin-bottom: 0.5rem;">🌟 St. Louis Early Arrival Option</h4>
+        <p>Dad could arrive April 14 or 15 to visit Clifford, then drive down to meet Luke on the 16th.</p>
+        <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="https://www.kayak.com/flights/PDX-STL/2025-04-14" 
+             target="_blank" class="btn btn-secondary btn-small">Apr 14 flights</a>
+          <a href="https://www.kayak.com/flights/PDX-STL/2025-04-15" 
+             target="_blank" class="btn btn-secondary btn-small">Apr 15 flights</a>
+        </div>
+      </div>
+
+      <h3 style="margin: 2rem 0 1rem; color: var(--color-forest);">Return: Saturday, April 19 (afternoon+)</h3>
       
       <div class="flight-grid">
-        
+        <!-- STL Return -->
         <div class="flight-card" data-airport="stl" data-traveler="dad" data-direction="return">
           <div class="flight-info">
-            <h4>St. Louis → Portland</h4>
-            <div class="flight-route">STL → PDX</div>
+            <h4>St. Louis → Portland <span class="badge badge-stl">STL</span></h4>
+            <div class="flight-route">STL → PDX · Afternoon departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Afternoon+ departures
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20STL%20to%20PDX%20on%20August%2019%202025%20afternoon" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="dad-stl-ret">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/STL-PDX/2025-04-19?fs=takeoff=1200" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-dad-stl-ret">Prefer</button>
           </div>
         </div>
-        
+
+        <!-- LIT Return -->
         <div class="flight-card" data-airport="lit" data-traveler="dad" data-direction="return">
           <div class="flight-info">
-            <h4>Little Rock → Portland</h4>
-            <div class="flight-route">LIT → PDX</div>
+            <h4>Little Rock → Portland <span class="badge badge-lit">LIT</span></h4>
+            <div class="flight-route">LIT → PDX · Afternoon departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Afternoon+ departures
-              </span>
+              <span class="flight-detail">⏱️ 1-2 stops</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20LIT%20to%20PDX%20on%20August%2019%202025%20afternoon" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="dad-lit-ret">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/LIT-PDX/2025-04-19?fs=takeoff=1200" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-dad-lit-ret">Prefer</button>
           </div>
         </div>
-        
+
+        <!-- MEM Return -->
         <div class="flight-card" data-airport="mem" data-traveler="dad" data-direction="return">
           <div class="flight-info">
-            <h4>Memphis → Portland</h4>
-            <div class="flight-route">MEM → PDX</div>
+            <h4>Memphis → Portland <span class="badge badge-mem">MEM</span></h4>
+            <div class="flight-route">MEM → PDX · Afternoon departures</div>
             <div class="flight-details">
-              <span class="flight-detail">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Afternoon+ departures
-              </span>
+              <span class="flight-detail">⏱️ 1 stop typical</span>
             </div>
           </div>
           <div class="flight-actions">
-            <a href="https://www.google.com/travel/flights?q=Flights%20from%20MEM%20to%20PDX%20on%20August%2019%202025%20afternoon" 
-               target="_blank" 
-               class="btn btn-primary btn-small">
-              View on Google Flights
-            </a>
-            <button class="pref-btn" data-pref="flight" data-value="dad-mem-ret">
-              Prefer
-            </button>
+            <a href="https://www.kayak.com/flights/MEM-PDX/2025-04-19?fs=takeoff=1200" 
+               target="_blank" class="btn btn-primary btn-small">Search Kayak</a>
+            <button class="pref-btn" data-pref="flight-dad-mem-ret">Prefer</button>
           </div>
         </div>
-        
       </div>
     </section>
 
-    <!-- Quick Compare Section -->
-    <section class="card mt-2">
-      <h2>Quick Price Compare</h2>
-      <p>Open all searches at once to compare current prices:</p>
-      
-      <div class="info-grid" style="margin-top: 1rem;">
-        <div class="info-item">
-          <div class="info-label">STL Round Trips</div>
-          <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20STL%20departing%20August%2016%202025%20returning%20August%2019%202025" 
-             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Luke: RIC↔STL</a>
-          <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20STL%20departing%20August%2016%202025%20returning%20August%2019%202025" 
-             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Dad: PDX↔STL</a>
-        </div>
-        <div class="info-item">
-          <div class="info-label">LIT Round Trips</div>
-          <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20LIT%20departing%20August%2016%202025%20returning%20August%2019%202025" 
-             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Luke: RIC↔LIT</a>
-          <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20LIT%20departing%20August%2016%202025%20returning%20August%2019%202025" 
-             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Dad: PDX↔LIT</a>
-        </div>
-        <div class="info-item">
-          <div class="info-label">MEM Round Trips</div>
-          <a href="https://www.google.com/travel/flights?q=Flights%20from%20RIC%20to%20MEM%20departing%20August%2016%202025%20returning%20August%2019%202025" 
-             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Luke: RIC↔MEM</a>
-          <a href="https://www.google.com/travel/flights?q=Flights%20from%20PDX%20to%20MEM%20departing%20August%2016%202025%20returning%20August%2019%202025" 
-             target="_blank" class="btn btn-secondary btn-small mt-1" style="display: inline-block;">Dad: PDX↔MEM</a>
-        </div>
+    <!-- Round-Trip Comparison Links -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Quick Round-Trip Search</h2>
+        <p>Compare full trip pricing at a glance</p>
       </div>
-    </section>
 
-    <section class="card mt-2">
-      <h2>Your Preferences</h2>
-      <div id="preferences-summary">
-        <p class="summary-empty">No preferences marked yet. Click "Prefer" on flights to track your choices.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h4 style="color: var(--color-forest);">Luke (RIC)</h4>
+          <p class="text-muted mb-2">April 16-19, 2025</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="https://www.kayak.com/flights/RIC-STL/2025-04-16/2025-04-19" target="_blank" class="btn btn-secondary btn-small">RIC ↔ STL</a>
+            <a href="https://www.kayak.com/flights/RIC-LIT/2025-04-16/2025-04-19" target="_blank" class="btn btn-secondary btn-small">RIC ↔ LIT</a>
+            <a href="https://www.kayak.com/flights/RIC-MEM/2025-04-16/2025-04-19" target="_blank" class="btn btn-secondary btn-small">RIC ↔ MEM</a>
+          </div>
+        </div>
+        <div class="card">
+          <h4 style="color: var(--color-forest);">Dad (PDX)</h4>
+          <p class="text-muted mb-2">April 16-19, 2025</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="https://www.kayak.com/flights/PDX-STL/2025-04-16/2025-04-19" target="_blank" class="btn btn-secondary btn-small">PDX ↔ STL</a>
+            <a href="https://www.kayak.com/flights/PDX-LIT/2025-04-16/2025-04-19" target="_blank" class="btn btn-secondary btn-small">PDX ↔ LIT</a>
+            <a href="https://www.kayak.com/flights/PDX-MEM/2025-04-16/2025-04-19" target="_blank" class="btn btn-secondary btn-small">PDX ↔ MEM</a>
+          </div>
+        </div>
       </div>
-      <button class="btn btn-secondary mt-1" onclick="clearAllPreferences()">Clear All Preferences</button>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Trip planning for Luke & Dad</p>
-    <p class="price-note">Flight prices link to Google Flights for live pricing</p>
+    <p>Flight prices via <a href="https://www.kayak.com" target="_blank">Kayak</a> · Prices change frequently, check for current rates</p>
   </footer>
 
   <script src="js/preferences.js"></script>
+  <script>
+    // Airport filter
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.flight-card').forEach(card => {
+          if (filter === 'all' || card.dataset.airport === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Preferred filter
+    document.querySelectorAll('[data-show]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-show]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const show = btn.dataset.show;
+        const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+        
+        document.querySelectorAll('.flight-card').forEach(card => {
+          const prefKey = card.querySelector('.pref-btn')?.dataset.pref;
+          if (show === 'all') {
+            card.classList.remove('hidden');
+          } else if (prefs[prefKey]) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Preference buttons
+    document.querySelectorAll('.pref-btn').forEach(btn => {
+      const prefKey = btn.dataset.pref;
+      const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+      
+      // Load initial state
+      if (prefs[prefKey]) {
+        btn.classList.add('active');
+        btn.textContent = '★ Preferred';
+        btn.closest('.flight-card')?.classList.add('selected');
+      }
+      
+      btn.addEventListener('click', () => {
+        const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
+        
+        if (prefs[prefKey]) {
+          delete prefs[prefKey];
+          btn.classList.remove('active');
+          btn.textContent = 'Prefer';
+          btn.closest('.flight-card')?.classList.remove('selected');
+        } else {
+          prefs[prefKey] = true;
+          btn.classList.add('active');
+          btn.textContent = '★ Preferred';
+          btn.closest('.flight-card')?.classList.add('selected');
+        }
+        
+        localStorage.setItem('ozarkPrefs', JSON.stringify(prefs));
+      });
+    });
+  </script>
 </body>
 </html>
