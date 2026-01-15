@@ -51,76 +51,74 @@
           <button class="day-tab" data-day="4">Sat, Apr 19</button>
         </div>
 
-        <!-- Day 1: Wednesday - Arrival -->
+        <!-- Day 1: Wednesday - Travel Day -->
         <div class="day-content" data-day="1">
           <div class="day-header">
-            <h3>Wednesday, April 16 — Arrival Day</h3>
-            <p>Travel day. Luke arrives evening, Dad flexible (or already with Clifford if STL).</p>
-          </div>
-
-          <div class="time-slot">
-            <div class="time-label">Daytime</div>
-            <div class="time-content">
-              <h4>Travel to Arkansas</h4>
-              <p>Flights arrive, pick up rental car, drive to Mountain View area.</p>
-              
-              <label class="activity-option" data-activity="day1-dad-early">
-                <input type="checkbox" id="day1-dad-early"> 
-                <span><strong>Dad arrives early (STL option)</strong> — Visit Clifford in St. Louis, drive down together or meet Luke</span>
-              </label>
-            </div>
+            <h3>Wednesday, April 16 — Travel Day</h3>
+            <p>Luke flies after work, arrives at airport city late evening. Dad flexible (or already with Clifford if STL).</p>
           </div>
 
           <div class="time-slot">
             <div class="time-label">Evening</div>
             <div class="time-content">
-              <h4>Settle In</h4>
-              <p>Check into lodging, grab a casual dinner.</p>
+              <h4>Luke's Flight</h4>
+              <p>Depart Richmond after 6pm, arrive at destination airport late evening.</p>
+            </div>
+          </div>
+
+          <div class="time-slot">
+            <div class="time-label">Night</div>
+            <div class="time-content">
+              <h4>Overnight Near Airport</h4>
+              <p>Arriving late, so stay near the airport tonight and drive to Mountain View fresh in the morning.</p>
               
-              <label class="activity-option" data-activity="day1-dinner-skillet">
-                <input type="checkbox" id="day1-dinner-skillet"> 
-                <span><strong>Dinner at the Skillet</strong> — If staying at Dry Creek Cabins (closes 7pm Fri/Sat only)</span>
+              <label class="activity-option" data-activity="day1-hotel-airport">
+                <input type="checkbox" id="day1-hotel-airport"> 
+                <span><strong>Hotel near airport</strong> — Get some rest before the drive</span>
               </label>
               
-              <label class="activity-option" data-activity="day1-dinner-downtown">
-                <input type="checkbox" id="day1-dinner-downtown"> 
-                <span><strong>Dinner downtown</strong> — Tommy's Pizza or grab-and-go</span>
+              <label class="activity-option" data-activity="day1-drive-partial">
+                <input type="checkbox" id="day1-drive-partial"> 
+                <span><strong>Drive partway</strong> — If arriving early enough, drive an hour or two toward MV</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="time-slot">
+            <div class="time-label">Dad</div>
+            <div class="time-content">
+              <h4>Dad's Schedule</h4>
+              <p>More flexibility depending on airport choice.</p>
+              
+              <label class="activity-option" data-activity="day1-dad-early-stl">
+                <input type="checkbox" id="day1-dad-early-stl"> 
+                <span><strong>Dad arrives early to STL</strong> — Visit Clifford Apr 14-16, then meet Luke or drive down together</span>
               </label>
               
-              <label class="activity-option" data-activity="day1-square-music">
-                <input type="checkbox" id="day1-square-music"> 
-                <span><strong>Courthouse square jam session</strong> — If you arrive in time for evening music (check if Wed night active)</span>
+              <label class="activity-option" data-activity="day1-dad-same-day">
+                <input type="checkbox" id="day1-dad-same-day"> 
+                <span><strong>Dad flies same day</strong> — Coordinate to arrive around the same time</span>
               </label>
             </div>
           </div>
         </div>
 
-        <!-- Day 2: Thursday - Folk Center -->
+        <!-- Day 2: Thursday - Drive to Mountain View -->
         <div class="day-content hidden" data-day="2">
           <div class="day-header">
-            <h3>Thursday, April 17 — Folk Center Day</h3>
-            <p>Full day at Ozark Folk Center. Craft Village open 10am–5pm.</p>
+            <h3>Thursday, April 17 — Arrival in Mountain View</h3>
+            <p>Morning drive to Mountain View. Afternoon/evening to explore and settle in.</p>
           </div>
 
           <div class="time-slot">
             <div class="time-label">Morning</div>
             <div class="time-content">
-              <h4>Craft Village Opens</h4>
-              <p>Arrive when the village opens to beat any crowds and see artisans set up.</p>
+              <h4>Drive to Mountain View</h4>
+              <p>2-4.5 hours depending on your airport. Scenic Ozark roads once you get close.</p>
               
-              <label class="activity-option" data-activity="day2-breakfast-skillet">
-                <input type="checkbox" id="day2-breakfast-skillet"> 
-                <span><strong>Breakfast at the Skillet</strong> — Country breakfast before exploring</span>
-              </label>
-              
-              <label class="activity-option" data-activity="day2-blacksmith">
-                <input type="checkbox" id="day2-blacksmith"> 
-                <span><strong>Watch the blacksmith</strong> — One of the most popular demonstrations</span>
-              </label>
-              
-              <label class="activity-option" data-activity="day2-pottery">
-                <input type="checkbox" id="day2-pottery"> 
-                <span><strong>Pottery demonstration</strong> — See wheel-thrown stoneware being made</span>
+              <label class="activity-option" data-activity="day2-breakfast-road">
+                <input type="checkbox" id="day2-breakfast-road"> 
+                <span><strong>Breakfast on the road</strong> — Grab something before hitting the highway</span>
               </label>
             </div>
           </div>
@@ -128,17 +126,30 @@
           <div class="time-slot">
             <div class="time-label">Midday</div>
             <div class="time-content">
-              <h4>Live Music & More Crafts</h4>
-              <p>Catch performances on the Blacksmith Stage (shows at 10:15, 11:15, 12:15, 1:45, 2:45, 3:45).</p>
+              <h4>Arrive & Check In</h4>
+              <p>Get settled at your lodging, grab lunch.</p>
               
-              <label class="activity-option" data-activity="day2-knife">
-                <input type="checkbox" id="day2-knife"> 
-                <span><strong>Knife making shop</strong> — Watch blades forged and handles fitted</span>
+              <label class="activity-option" data-activity="day2-lunch-skillet">
+                <input type="checkbox" id="day2-lunch-skillet"> 
+                <span><strong>Lunch at the Skillet</strong> — If staying at Dry Creek Cabins</span>
               </label>
               
-              <label class="activity-option" data-activity="day2-broom">
-                <input type="checkbox" id="day2-broom"> 
-                <span><strong>Broom making</strong> — Traditional Ozark craft</span>
+              <label class="activity-option" data-activity="day2-lunch-downtown">
+                <input type="checkbox" id="day2-lunch-downtown"> 
+                <span><strong>Lunch downtown</strong> — Explore the Mountain View square area</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="time-slot">
+            <div class="time-label">Afternoon</div>
+            <div class="time-content">
+              <h4>First Taste of the Folk Center</h4>
+              <p>Craft Village is open until 5pm (Tue-Sat). Get a preview before tomorrow's full day.</p>
+              
+              <label class="activity-option" data-activity="day2-craft-village-preview">
+                <input type="checkbox" id="day2-craft-village-preview"> 
+                <span><strong>Craft Village preview</strong> — Wander the village, catch afternoon music on Blacksmith Stage</span>
               </label>
               
               <label class="activity-option" data-activity="day2-herb-garden">
@@ -146,9 +157,9 @@
                 <span><strong>Heritage Herb Garden</strong> — Medicinal and culinary herbs</span>
               </label>
               
-              <label class="activity-option" data-activity="day2-loco-ropes">
-                <input type="checkbox" id="day2-loco-ropes"> 
-                <span><strong>Loco Ropes adventure</strong> — Treetop course if you want some action</span>
+              <label class="activity-option" data-activity="day2-relax">
+                <input type="checkbox" id="day2-relax"> 
+                <span><strong>Relax at lodging</strong> — Decompress after travel</span>
               </label>
             </div>
           </div>
@@ -156,37 +167,37 @@
           <div class="time-slot">
             <div class="time-label">Evening</div>
             <div class="time-content">
-              <h4>Dinner & Relaxation</h4>
+              <h4>Dinner & Evening</h4>
               
               <label class="activity-option" data-activity="day2-dinner-downtown">
                 <input type="checkbox" id="day2-dinner-downtown"> 
-                <span><strong>Dinner in downtown Mountain View</strong> — Explore the square area</span>
+                <span><strong>Dinner in downtown Mountain View</strong> — Tommy's Pizza, Grandma's House, or other local spot</span>
               </label>
               
-              <label class="activity-option" data-activity="day2-evening-music">
-                <input type="checkbox" id="day2-evening-music"> 
-                <span><strong>Evening music on the square</strong> — Check if Thursday has jam sessions</span>
+              <label class="activity-option" data-activity="day2-evening-square">
+                <input type="checkbox" id="day2-evening-square"> 
+                <span><strong>Evening on the square</strong> — Check if Thursday has informal music</span>
               </label>
             </div>
           </div>
         </div>
 
-        <!-- Day 3: Friday - Caverns & River -->
+        <!-- Day 3: Friday - Main Day -->
         <div class="day-content hidden" data-day="3">
           <div class="day-header">
-            <h3>Friday, April 18 — Adventure Day</h3>
-            <p>Explore beyond the Folk Center: caverns, trails, or river.</p>
+            <h3>Friday, April 18 — The Big Day</h3>
+            <p>Full day to explore! Plus Friday night is the best night for live music on the square.</p>
           </div>
 
           <div class="time-slot">
             <div class="time-label">Morning</div>
             <div class="time-content">
-              <h4>Blanchard Springs Caverns</h4>
-              <p>15 miles north. Book the Dripstone Trail tour for an easy, spectacular walk through living caves.</p>
+              <h4>Option A: Blanchard Springs Caverns</h4>
+              <p>15 miles north. One of America's most spectacular caves. Book an early tour.</p>
               
               <label class="activity-option" data-activity="day3-dripstone">
                 <input type="checkbox" id="day3-dripstone"> 
-                <span><strong>Dripstone Trail tour</strong> — Paved, accessible, 1.2 miles round trip (~$12–15)</span>
+                <span><strong>Dripstone Trail tour</strong> — Paved, accessible, 1.2 miles round trip. Stunning formations.</span>
               </label>
               
               <label class="activity-option" data-activity="day3-discovery">
@@ -197,10 +208,43 @@
           </div>
 
           <div class="time-slot">
+            <div class="time-label">Morning</div>
+            <div class="time-content">
+              <h4>Option B: Folk Center Deep Dive</h4>
+              <p>If you'd rather save the caverns and spend the whole day at the Craft Village.</p>
+              
+              <label class="activity-option" data-activity="day3-breakfast-skillet">
+                <input type="checkbox" id="day3-breakfast-skillet"> 
+                <span><strong>Breakfast at the Skillet</strong> — Country breakfast to fuel the day</span>
+              </label>
+              
+              <label class="activity-option" data-activity="day3-blacksmith">
+                <input type="checkbox" id="day3-blacksmith"> 
+                <span><strong>Watch the blacksmith</strong> — One of the most popular demonstrations</span>
+              </label>
+              
+              <label class="activity-option" data-activity="day3-pottery">
+                <input type="checkbox" id="day3-pottery"> 
+                <span><strong>Pottery demonstration</strong> — Wheel-thrown stoneware</span>
+              </label>
+              
+              <label class="activity-option" data-activity="day3-knife">
+                <input type="checkbox" id="day3-knife"> 
+                <span><strong>Knife making shop</strong> — Blades forged and handles fitted</span>
+              </label>
+              
+              <label class="activity-option" data-activity="day3-broom">
+                <input type="checkbox" id="day3-broom"> 
+                <span><strong>Broom making</strong> — Traditional Ozark craft</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="time-slot">
             <div class="time-label">Midday</div>
             <div class="time-content">
-              <h4>Blanchard Recreation Area</h4>
-              <p>After the cave tour, explore the outdoor areas nearby.</p>
+              <h4>If You Did Caverns: Blanchard Area</h4>
+              <p>Explore the outdoor recreation area after your cave tour.</p>
               
               <label class="activity-option" data-activity="day3-waterfall">
                 <input type="checkbox" id="day3-waterfall"> 
@@ -212,14 +256,9 @@
                 <span><strong>Mirror Lake</strong> — Scenic lake, trout fishing available</span>
               </label>
               
-              <label class="activity-option" data-activity="day3-old-mill">
-                <input type="checkbox" id="day3-old-mill"> 
-                <span><strong>The Old Mill</strong> — Historic CCC-built mill ruins, nice hike</span>
-              </label>
-              
               <label class="activity-option" data-activity="day3-mellons">
                 <input type="checkbox" id="day3-mellons"> 
-                <span><strong>Mellon's Country Store</strong> — Old-fashioned candy and souvenirs</span>
+                <span><strong>Mellon's Country Store</strong> — Old-fashioned candy and Ozark charm</span>
               </label>
             </div>
           </div>
@@ -227,21 +266,12 @@
           <div class="time-slot">
             <div class="time-label">Afternoon</div>
             <div class="time-content">
-              <h4>Optional: Buffalo River or More Exploring</h4>
+              <h4>Craft Village (if you did caverns in AM)</h4>
+              <p>Head to the Folk Center for the afternoon. Live music on Blacksmith Stage.</p>
               
-              <label class="activity-option" data-activity="day3-buffalo">
-                <input type="checkbox" id="day3-buffalo"> 
-                <span><strong>Drive to Buffalo National River</strong> — Scenic overlooks, short hikes (~1 hr each way)</span>
-              </label>
-              
-              <label class="activity-option" data-activity="day3-syllamo">
-                <input type="checkbox" id="day3-syllamo"> 
-                <span><strong>Syllamo bike trail</strong> — If you rent/bring bikes, world-class single track</span>
-              </label>
-              
-              <label class="activity-option" data-activity="day3-relax">
-                <input type="checkbox" id="day3-relax"> 
-                <span><strong>Return to lodging, relax</strong> — Recharge before evening</span>
+              <label class="activity-option" data-activity="day3-craft-afternoon">
+                <input type="checkbox" id="day3-craft-afternoon"> 
+                <span><strong>Afternoon at Craft Village</strong> — Artisan demos, music, shopping</span>
               </label>
             </div>
           </div>
@@ -249,22 +279,22 @@
           <div class="time-slot">
             <div class="time-label">Evening</div>
             <div class="time-content">
-              <h4>Friday Night Music</h4>
-              <p>Friday is the best night for music on the courthouse square!</p>
+              <h4>🎸 Friday Night Music!</h4>
+              <p>Friday is THE night for music in Mountain View. Don't miss it!</p>
+              
+              <label class="activity-option" data-activity="day3-dinner-early">
+                <input type="checkbox" id="day3-dinner-early"> 
+                <span><strong>Early dinner</strong> — Eat before heading to the square</span>
+              </label>
               
               <label class="activity-option" data-activity="day3-square-friday">
                 <input type="checkbox" id="day3-square-friday"> 
-                <span><strong>Courthouse square jam session</strong> — The real deal, bring a chair</span>
+                <span><strong>🎵 Courthouse square jam session</strong> — The real deal! Bring chairs, soak in the music</span>
               </label>
               
               <label class="activity-option" data-activity="day3-driftwood">
                 <input type="checkbox" id="day3-driftwood"> 
-                <span><strong>Jimmy Driftwood Barn</strong> — Folk music show 7–9pm</span>
-              </label>
-              
-              <label class="activity-option" data-activity="day3-skillet-dinner">
-                <input type="checkbox" id="day3-skillet-dinner"> 
-                <span><strong>Dinner at the Skillet</strong> — Open until 7pm on Fridays</span>
+                <span><strong>Jimmy Driftwood Barn</strong> — Folk music show 7-9pm (Fri nights)</span>
               </label>
             </div>
           </div>
@@ -274,23 +304,28 @@
         <div class="day-content hidden" data-day="4">
           <div class="day-header">
             <h3>Saturday, April 19 — Departure Day</h3>
-            <p>Last morning in the Ozarks, then drive to airport for return flights.</p>
+            <p>Morning in the Ozarks, then drive to airport for afternoon flights home.</p>
           </div>
 
           <div class="time-slot">
             <div class="time-label">Morning</div>
             <div class="time-content">
-              <h4>Final Exploration</h4>
-              <p>Depending on flight times, you may have time for one more activity.</p>
+              <h4>Last Bit of Mountain View</h4>
+              <p>Depending on flight times, you have the morning to squeeze in one more thing.</p>
               
-              <label class="activity-option" data-activity="day4-breakfast">
-                <input type="checkbox" id="day4-breakfast"> 
+              <label class="activity-option" data-activity="day4-breakfast-grandmas">
+                <input type="checkbox" id="day4-breakfast-grandmas"> 
                 <span><strong>Breakfast at Grandma's House Cafe</strong> — Famous pies, home cooking</span>
               </label>
               
-              <label class="activity-option" data-activity="day4-folk-center">
-                <input type="checkbox" id="day4-folk-center"> 
-                <span><strong>Quick return to Craft Village</strong> — Opens 10am, catch anything you missed</span>
+              <label class="activity-option" data-activity="day4-breakfast-skillet">
+                <input type="checkbox" id="day4-breakfast-skillet"> 
+                <span><strong>Breakfast at the Skillet</strong> — One more country breakfast</span>
+              </label>
+              
+              <label class="activity-option" data-activity="day4-folk-center-quick">
+                <input type="checkbox" id="day4-folk-center-quick"> 
+                <span><strong>Quick Craft Village stop</strong> — Opens 10am, catch anything you missed</span>
               </label>
               
               <label class="activity-option" data-activity="day4-dulcimer">
@@ -300,31 +335,39 @@
               
               <label class="activity-option" data-activity="day4-souvenirs">
                 <input type="checkbox" id="day4-souvenirs"> 
-                <span><strong>Gift shop / souvenir stop</strong> — Folk Center or downtown</span>
+                <span><strong>Souvenir shopping</strong> — Folk Center gift shop or downtown</span>
               </label>
             </div>
           </div>
 
           <div class="time-slot">
-            <div class="time-label">Midday+</div>
+            <div class="time-label">Midday</div>
             <div class="time-content">
-              <h4>Drive to Airport & Fly Home</h4>
-              <p>Allow enough time for the drive (2–4.5 hours depending on airport) plus car return and security.</p>
+              <h4>Drive to Airport</h4>
+              <p>Allow enough time for the drive plus car return and security. Aim for afternoon flights.</p>
               
               <label class="activity-option" data-activity="day4-drive-stl">
                 <input type="checkbox" id="day4-drive-stl"> 
-                <span><strong>Drive to St. Louis (STL)</strong> — 4.5 hours, depart by ~10am for afternoon flight</span>
+                <span><strong>Drive to St. Louis (STL)</strong> — 4.5 hours. Leave by ~10am for 3-4pm flight.</span>
               </label>
               
               <label class="activity-option" data-activity="day4-drive-lit">
                 <input type="checkbox" id="day4-drive-lit"> 
-                <span><strong>Drive to Little Rock (LIT)</strong> — 2 hours, more flexibility</span>
+                <span><strong>Drive to Little Rock (LIT)</strong> — 2 hours. More morning flexibility.</span>
               </label>
               
               <label class="activity-option" data-activity="day4-drive-mem">
                 <input type="checkbox" id="day4-drive-mem"> 
-                <span><strong>Drive to Memphis (MEM)</strong> — 3 hours, BBQ stop on the way?</span>
+                <span><strong>Drive to Memphis (MEM)</strong> — 3 hours. BBQ stop on the way?</span>
               </label>
+            </div>
+          </div>
+
+          <div class="time-slot">
+            <div class="time-label">Afternoon</div>
+            <div class="time-content">
+              <h4>Flights Home</h4>
+              <p>Return rental car, fly back to Richmond / Portland.</p>
             </div>
           </div>
         </div>
@@ -376,11 +419,9 @@
     // Day tab switching
     document.querySelectorAll('.day-tab').forEach(tab => {
       tab.addEventListener('click', () => {
-        // Update tab states
         document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         
-        // Show corresponding content
         const day = tab.dataset.day;
         document.querySelectorAll('.day-content').forEach(content => {
           content.classList.toggle('hidden', content.dataset.day !== day);
@@ -390,33 +431,35 @@
 
     // Activity labels for summary
     const activityLabels = {
-      'day1-dad-early': 'Dad arrives early (STL)',
-      'day1-dinner-skillet': 'Dinner at Skillet',
-      'day1-dinner-downtown': 'Dinner downtown',
-      'day1-square-music': 'Courthouse square music',
-      'day2-breakfast-skillet': 'Breakfast at Skillet',
-      'day2-blacksmith': 'Blacksmith demo',
-      'day2-pottery': 'Pottery demo',
-      'day2-knife': 'Knife making',
-      'day2-broom': 'Broom making',
+      'day1-hotel-airport': 'Hotel near airport',
+      'day1-drive-partial': 'Drive partway',
+      'day1-dad-early-stl': 'Dad arrives early (STL)',
+      'day1-dad-same-day': 'Dad flies same day',
+      'day2-breakfast-road': 'Breakfast on the road',
+      'day2-lunch-skillet': 'Lunch at Skillet',
+      'day2-lunch-downtown': 'Lunch downtown',
+      'day2-craft-village-preview': 'Craft Village preview',
       'day2-herb-garden': 'Herb Garden',
-      'day2-loco-ropes': 'Loco Ropes',
+      'day2-relax': 'Relax at lodging',
       'day2-dinner-downtown': 'Dinner downtown',
-      'day2-evening-music': 'Evening music',
+      'day2-evening-square': 'Evening on the square',
       'day3-dripstone': 'Dripstone Trail tour',
       'day3-discovery': 'Discovery Trail tour',
+      'day3-breakfast-skillet': 'Breakfast at Skillet',
+      'day3-blacksmith': 'Blacksmith demo',
+      'day3-pottery': 'Pottery demo',
+      'day3-knife': 'Knife making',
+      'day3-broom': 'Broom making',
       'day3-waterfall': 'Blanchard waterfall',
       'day3-mirror-lake': 'Mirror Lake',
-      'day3-old-mill': 'The Old Mill',
       'day3-mellons': "Mellon's Country Store",
-      'day3-buffalo': 'Buffalo River drive',
-      'day3-syllamo': 'Syllamo bike trail',
-      'day3-relax': 'Relax at lodging',
-      'day3-square-friday': 'Friday square music',
+      'day3-craft-afternoon': 'Craft Village afternoon',
+      'day3-dinner-early': 'Early dinner',
+      'day3-square-friday': '🎵 Friday square music',
       'day3-driftwood': 'Jimmy Driftwood Barn',
-      'day3-skillet-dinner': 'Dinner at Skillet',
-      'day4-breakfast': "Grandma's House breakfast",
-      'day4-folk-center': 'Craft Village return',
+      'day4-breakfast-grandmas': "Grandma's House breakfast",
+      'day4-breakfast-skillet': 'Breakfast at Skillet',
+      'day4-folk-center-quick': 'Quick Craft Village stop',
       'day4-dulcimer': 'McSpadden Dulcimers',
       'day4-souvenirs': 'Souvenir shopping',
       'day4-drive-stl': 'Drive to STL',
@@ -460,7 +503,6 @@
         updateSummary();
       });
       
-      // Also allow clicking the whole option
       option.addEventListener('click', (e) => {
         if (e.target !== checkbox) {
           checkbox.checked = !checkbox.checked;
@@ -494,7 +536,6 @@
       if (confirm('Clear all selected activities?')) {
         const prefs = JSON.parse(localStorage.getItem('ozarkPrefs') || '{}');
         
-        // Remove only activity preferences
         Object.keys(prefs).forEach(k => {
           if (k.startsWith('activity-')) {
             delete prefs[k];
@@ -503,7 +544,6 @@
         
         localStorage.setItem('ozarkPrefs', JSON.stringify(prefs));
         
-        // Uncheck all checkboxes
         document.querySelectorAll('.activity-option').forEach(option => {
           option.classList.remove('selected');
           option.querySelector('input[type="checkbox"]').checked = false;
@@ -513,7 +553,6 @@
       }
     }
 
-    // Initialize
     loadActivities();
   </script>
 </body>
